@@ -11,120 +11,135 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
+    font-size: 20px;
     background: url(./background.jpg);
     background-size: cover;
 }
 
 .container {
-    width: 400px;
-    max-width: 400px;
+    width: 40%;
+    height: 80%;
+    font-size: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 1rem;
     padding: 2rem;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
-    border-radius: var(--border-radius);
+    box-shadow: 0 0 40px rgba(50, 224, 15, 0.5);
+    border-radius: 20px;
     background: #ffffff;
+    color: #4bb544;
+    overflow: hidden;
 }
-
-.container,
-.form__input,
-.form__button {
-    font: 500 1rem 'Quicksand', sans-serif;
+.login{
+    display: block;
 }
-
-.form--hidden {
+.signup{
     display: none;
 }
-
-.form > *:first-child {
-    margin-top: 0;
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4bb544;
 }
-
-.form > *:last-child {
-    margin-bottom: 0;
+button{
+    display: flex;
+    color: #4bb544;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border-radius: 10px;
+    padding: 7px 40px;
+    background: none;
+    border: 1px  solid #4bb544;
 }
-
-.form__title {
-    margin-bottom: 2rem;
-    text-align: center;
+:placeholder-shown{
+    font-size: 20px;
+    padding: 10px;
+    color: #4bb544;
 }
-
-.form__message {
-    text-align: center;
-    margin-bottom: 1rem;
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: green;
 }
-
-.form__message--success {
-    color: var(--color-success);
-}
-
-.form__message--error {
-    color: var(--color-error);
-}
-
-.form__input-group {
-    margin-bottom: 1rem;
-}
-
-.form__input {
-    display: block;
+.container  input[type="text"]{
+    height: 36px;
     width: 100%;
-    padding: 0.75rem;
-    box-sizing: border-box;
-    border-radius: var(--border-radius);
-    border: 1px solid #dddddd;
-    outline: none;
-    background: #eeeeee;
-    transition: background 0.2s, border-color 0.2s;
+    padding-top: 2%;
+    height: 30px;
+    text-align: left;
 }
-
-.form__input:focus {
-    border-color: var(--color-primary);
+.user{
+    padding: 5% 2%;
+    font-size: 20px;
+}
+input{
+    border: 1px solid #4bb544;
+    border-radius: 10px;
+}
+.Email{
+    padding: 5% 2%;
+    font-size: 20px;
+}
+.pass{
+    padding: 5% 2%;
+    font-size: 20px;
+}
+label{
+    font-size: 30px;
+}
+.text{
+    padding: 20px;
+    font-size: 20px;
+    color: #4bb544;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.text a{
+    color: #4bb544;
+}
+.cline{
+    width: 70%;
+}
+.cline h1{
+    font-size: 80px;
+    width: 100%;
+}
+.cline p{
+    font-size: 30px;
+}
+.cline h2{
+    font-size: 50px;
+}
+.welcome{
+    cursor: pointer;
+    width: 80%;
+    height: 80%;
+    font-size: 20px;
+    display: inline-block;
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    font-size: 20px;
+    padding: 2% 10%;
+    box-shadow: 0 0 40px rgba(50, 224, 15, 0.5);
+    border-radius: 20px;
     background: #ffffff;
+    color: #4bb544;
+    overflow: hidden;
 }
-
-.form__input--error {
-    color: var(--color-error);
-    border-color: var(--color-error);
-}
-
-.form__input-error-message {
-    margin-top: 0.5rem;
-    font-size: 0.85rem;
-    color: var(--color-error);
-}
-
-.form__button {
+.buttons{
     width: 100%;
-    padding: 1rem 2rem;
-    font-weight: bold;
-    font-size: 1.1rem;
-    color: #ffffff;
-    border: none;
-    border-radius: var(--border-radius);
-    outline: none;
-    cursor: pointer;
-    background: var(--color-primary);
-}
-
-.form__button:hover {
-    background: var(--color-primary-dark);
-}
-
-.form__button:active {
-    transform: scale(0.98);
-}
-
-.form__text {
-    text-align: center;
-}
-
-.form__link {
-    color: var(--color-secondary);
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.form__link:hover {
-    text-decoration: underline;
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 2rem;
 }
